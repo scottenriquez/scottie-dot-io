@@ -17,13 +17,13 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-app.get('*', function(req, res) {
-	res.sendFile(path.join( __dirname, '../src/index.html'));
+app.get('*', function(request, response) {
+	response.sendFile(path.join( __dirname, '../src/index.html'));
 });
 
-app.listen(port, function(err) {
-	if (err) {
-		console.log(err);
+app.listen(port, function(error) {
+	if (error) {
+		console.log(error);
 	}
 	else {
 		open(`http://localhost:${port}`);
