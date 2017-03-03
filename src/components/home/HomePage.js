@@ -4,12 +4,31 @@ import {Link} from 'react-router';
 class HomePage extends React.Component {
 	render() {
 		return (
-			<div className="jumbotron">
-				<h1>Scott Enriquez</h1>
-				<p>software developer | IT analyst | writer | linguist</p>
-				<Link to="about" className="btn btn-primary btn-lg">Learn more...</Link>
+			<div className="container">
+				<div className="row">
+					<div className="col m9">
+						<div id="about-me" className="card">
+							<div className="card-image">
+								<img src="http://scottie.io/content/images/interview.png" />
+								<span className="card-title">About Me</span>
+							</div>
+							<div className="card-content grey darken-4">
+								<p></p>
+							</div>
+						</div>
+					</div>
+					<div className="col hide-on-small-only m3 l2">
+						<div className="toc-wrapper pinned">
+							<div>
+								<ul className="section table-of-contents">
+									<li><a href="#about-me">About Me</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
-		)
+		);
 	}
 }
 
