@@ -1,6 +1,6 @@
 import React, {PropTypes} from 'react';
 import Header from './common/Header';
-import Footer from './common/Footer';
+import Footer from './common/MyFooter';
 
 class App extends React.Component {
 	render() {

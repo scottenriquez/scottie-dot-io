@@ -1,5 +1,5 @@
 import React from 'react';
-import Footer from '../common/footer';
+import Footer from '../common/MyFooter';
 
 class AboutPage extends React.Component {
 	render() {
