@@ -3,6 +3,33 @@ body {
 	color: white;
 }
 
-html {
-	font-family: 'Ubuntu', sans-serif;
+.absolute-center {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+}
+
+.absolute-center-navbar-offset {
+	height: 90%;
+	width: 100%;
+	display: flex;
+	position: fixed;
+	align-items: center;
+	justify-content: center;
+}
+
+#homepage-denali-background {
+	position: fixed !important;
+	top: 0;
+	left: 0;
+	min-width: 100%;
+	min-height: 100%;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: -1;
 }
